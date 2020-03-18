@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://ruff.io/zh-cn/ -->
+<html lang="zh-cn">
+
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EVM 物联网虚拟机</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ruff.io/apple-touch-icon.png?v=kPxgawG6MB">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ruff.io/favicon-32x32.png?v=kPxgawG6MB">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ruff.io/favicon-16x16.png?v=kPxgawG6MB">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <script async="" src="./static/analytics.js"></script>
+    <script>!function(e,t){var i=480,a=e.screen.width,n=a/i,d=navigator.userAgent;if(/Android (\d+\.\d+)/.test(d)&&i>a){var m=parseFloat(RegExp.$1);m>2.3?t.write('<meta name="viewport" content="width='+i+", initial-scale="+n+", minimum-scale = "+n+", maximum-scale = "+n+', target-densitydpi=device-dpi">'):t.write('<meta name="viewport" content="width='+i+', target-densitydpi=device-dpi">')}else i>a?t.write('<meta name="viewport" content="width='+i+', user-scalable=no">'):t.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">')}(window,document)</script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="./static/fonts.css" rel="stylesheet" type="text/css">
+    <link href="./static/font-awesome.min.css" rel="stylesheet">
+    <link href="./static/bootstrap.css" rel="stylesheet">
+    <link href="./static/balloon.min.css" rel="stylesheet">
+    <link href="./static/css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/navy.css" type="text/css">
+    <link rel="alternate" href="https://ruff.io/atom.xml" title="EVM 物联网虚拟机">
+    <meta name="description" content="支持 JavaScript 开发应用的物联网操作系统">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EVM 物联网虚拟机">
+    <meta property="og:url" content="https://scriptiot.github.io/">
+    <meta property="og:site_name" content="EVM 物联网虚拟机">
+    <meta property="og:description" content="支持 JavaScript 开发应用的物联网操作系统">
+    <meta property="og:locale" content="zh-cn">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EVM 物联网虚拟机">
+    <meta name="twitter:description" content="支持 JavaScript 开发应用的物联网操作系统">
+    <meta name="twitter:image" content="https://ruff.io/images/test/let-there-be-light.svg">
+    <script src="./static/polyfills.js"></script>
+    <script>
+    ! function() {
+        var n = Cookies.get("ruff_site_lang");
+        n && "zh-cn" !== n && (location.href = "/" + n + "/")
+    }()
+    </script>
+    <script>
+    ! function(e, a, t, n, c, o, s) {
+        e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+            (e[c].q = e[c].q || []).push(arguments)
+        }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src = n, s.parentNode.insertBefore(o, s)
+    }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-70307187-1", "auto"), ga("send", "pageview")
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="hero-section" style="background-image: linear-gradient(-55deg,#00b1b5 1%,#00b1b5 98%);">
+            <div class="container hero-section-wrap">
+                <header class="white-header" style="font-size: 24px">
+                    <div class="logo-wrap"><a href="https://scriptiot.github.io/"><img src="./static/logo3.svg" alt=""></a></div>
+                    <div style="height: 60px">
+                        <nav style="padding-top: 15px">
+                            <ul class="main-nav">
+                                <li class="main-nav-content"><a target="_blank" href="https://scriptiot.github.io/">首页</a></li>
+                                <li class="main-nav-content"><a target="_blank" href="http://47.105.117.50/discuzx/upload/">论坛</a></li>
+                                <li class="main-nav-content"><a target="_blank" href="https://github.com/scriptiot/evm">Github</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+            <div class="marketing container">
+                <div class="feature-section-wrap row"></div>
+                <div class="marketing-content">
+                    <div style="height: 12%"></div>>
+                    <div class="title-wrap">
+                        <div class="title-wrap-content">
+                            <h1 class="title">什么是EVM</h1>
+                            <p class="description"> EVM 全称 Embedded Virtural Machine，本质上是一款通用、精简的嵌入式虚拟机，由语法解析前端框架和字节码运行后端构成，可运行在资源受限制的单片机上。
+                            </p>
+                            <div class="main-button hero-button link-btn" data-link="https://github.com/scriptiot/evm"><i class="fa fa-arrow-right">&nbsp;&nbsp;体验</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section feature-section container">
+            <div class="feature-section-wrap row">
+                <div class="blank col-md-1"></div>
+                <div class="feature-title-wrap col-md-5 col-xs-15" style="margin-top: 24%">
+                    <h2 class="sub-title"> <span class="high-light">EVM 优势特点</h2>
+                </div>
+                <div class="blank col-md-1"></div>
+                <div class="feature-wrap col-md-7 col-xs-15">
+                    <ul class="feature-content-list">
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">体积小</h3>
+                                <p class="feature-content-desc">最小编译体积40KB，最小内存占用2KB;</p>
+                            </div>
+                        </li>
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">多语言</h3>
+                                <p class="feature-content-desc">支持多语言混合开发，目前支持JS、Python、Lua、QML、Json、XML等语言;</p>
+                            </div>
+                        </li>
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">跨平台</h3>
+                                <p class="feature-content-desc">纯C语言开发的虚拟机，没有任何外部依赖，可以在各种芯片上编译运行；</p>
+                            </div>
+                        </li>
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">高性能</h3>
+                                <p class="feature-content-desc">高效的运行性能，超越QuickJs；</p>
+                            </div>
+                        </li>
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">内存高效</h3>
+                                <p class="feature-content-desc">先进的内存管理，无内存泄露和内存碎片问题;</p>
+                            </div>
+                        </li>
+                        <li class="feature-content-wrap row">
+                            <div class="feature-content-icon col-md-3"><img src="./static/feature-hardware.svg"></div>
+                            <div class="feature-content col-md-12">
+                                <h3 class="feature-content-title">高可拓展性</h3>
+                                <p class="feature-content-desc">灵活的虚拟机扩展技术，多语言可共享扩展功能;</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section apply-section hidden"></div>
+        <div class="container">
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">EVM + RTOS</span></h2>
+            </div>
+            <div class="apply-content-list row">
+                <div class="apply-content col-md-5 col-sm-5 col-xs-15">
+                    <div class="apply-content-wrap">
+                        <div class="apply-content-icon app-demo-icon"><img src="./static/app-demo.svg"></div>
+                        <div class="apply-content-item">
+                            <ul class="apply-content-desc">EVM + RTOS
+                                <li>UCOS</li>
+                                <li>liteOS</li>
+                                <li>FreeRTOS</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="apply-content col-md-5 col-sm-5 col-xs-15">
+                    <div class="apply-content-wrap">
+                        <div class="apply-content-icon app-industry-icon"><img src="./static/app-industry.svg"></div>
+                        <div class="apply-content-item">
+                            <ul class="apply-content-desc">EVM + GUI
+                                <li>littevgl</li>
+                                <li>GuiLite</li>
+                                <li>awtk</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="apply-content col-md-5 col-sm-5 col-xs-15">
+                    <div class="apply-content-wrap">
+                        <div class="apply-content-icon app-home-icon"><img src="./static/app-home.svg"></div>
+                        <div class="apply-content-item">
+                            <ul class="apply-content-desc">EVM + ?
+                                <li>MQTT</li>
+                                <li>NB-IOT</li>
+                                <li>LORa</li>
+                                <li>...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">完善的多语言支持</span></h2>
+            </div>
+            <div class="apply-title">
+                <a href="https://scriptiot.github.io/"><img src="./static/lang.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">EVM愿景</span></h2>
+            </div>
+            <div class="apply-title">
+                <h1 class="title">万物互联，因我们而简单</h1>
+                <h3 class="description"> 打破物联网和互联网人才边界，赋能物联网企业和开发者提供全新的开发模式
+                </h3>
+                <h3 class="description"> 降低物联网开发门槛，极速提升开发效率，成为物联网时代的引领者。
+                </h3>
+            </div>
+        </div>
+        <div class="section">
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">加入我们</span></h2>
+            </div>
+            <div class="apply-title">
+                <a href="https://scriptiot.github.io/"><img src="./static/QQ.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">联系我们</span></h2>
+            </div>
+            <div class="apply-title">
+                <h2 class="sub-title"><span class="high-light">scriptiot@aliyun.com</span></h2>
+            </div>
+        </div>
+        <footer id="footer" class="wrapper">
+            <div class="inner">
+                <div id="footer-copyright">
+                    <h3>©scriptiot 2020 <a href="https://scriptiot.github.io/" target="_blank">EVM</h3></a><br>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+    <div id="mobile-nav-dimmer"></div>
+    <nav id="mobile-nav">
+        <div id="mobile-nav-inner">
+            <ul id="mobile-nav-list">
+                <li class="mobile-nav-content"><a target="_blank" href="https://ruff.io/">首页</a></li>
+                <li class="mobile-nav-content"><a target="_blank" href="http://47.105.117.50/discuzx/upload/">文档</a></li>
+                <li class="mobile-nav-content"><a target="_blank" href="https://github.com/scriptiot/evm">Github</a></li>
+            </ul>
+        </div>
+        <div id="mobile-lang-select-wrap"><label class="mobile-lang-select-label" data-value="en" data-canonical=""><i class="fa fa-globe"></i><span>EN</span></label></div>
+    </nav>
+    <script src="./static/motion_effect.js"></script>
+    <script src="./static/mobile_nav.js"></script>
+</body>
+
+</html>

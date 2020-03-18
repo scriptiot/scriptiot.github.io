@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="24px" viewBox="0 0 35 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>JS</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.8881537%" y1="15.4555731%" x2="66.6249722%" y2="88.6760114%" id="linearGradient-1">
+            <stop stop-color="#2FCCCD" offset="0%"></stop>
+            <stop stop-color="#19AEB2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI-0423" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="bold" font-family="DINAlternate-Bold, DIN Alternate" letter-spacing="2" font-size="32">
+        <g id="ui-home-" transform="translate(-663.000000, -1419.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-5" transform="translate(643.000000, 1392.000000)">
+                <g id="Group-53">
+                    <text id="JS">
+                        <tspan x="20" y="50">J</tspan>
+                        <tspan x="37.390625" y="50">S</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
